@@ -46,6 +46,6 @@ CREATE TABLE diagnoses(
     id SERIAL PRIMARY KEY,
     patient_id INTEGER REFERENCES patients,
     doctor_id INTEGER REFERENCES doctors,
-    diagnose_id INTEGER REFERENCES diseases,
+    diagnosis_id INTEGER REFERENCES diseases,
     diagnose_date TIMESTAMP NOT NULL
 );
