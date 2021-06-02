@@ -23,7 +23,7 @@ CREATE TABLE players(
     team_id INTEGER REFERENCES teams
 );
 
-CREATE TABLE gols(
+CREATE TABLE goles(
     id SERIAL PRIMARY KEY,
     amount_gols INTEGER NOT NULL
 );
@@ -54,5 +54,5 @@ CREATE TABLE matches_seasons(
     team_id INTEGER REFERENCES teams,
     match_id INTEGER REFERENCES matches,
     season_id INTEGER REFERENCES seasons,
-    refere_id INTEGER REFERENCES referees
+    referee_id INTEGER REFERENCES referees
 );
