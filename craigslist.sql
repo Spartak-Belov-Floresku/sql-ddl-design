@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS craiglist;
-CREATE DATABASE craiglist;
+DROP DATABASE IF EXISTS craigslist;
+CREATE DATABASE craigslist;
 
-\c craiglist
+\c craigslist
 
 CREATE TABLE regions(
     id SERIAL PRIMARY KEY,
